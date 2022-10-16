@@ -1,0 +1,14 @@
+package com.hajun.pension.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class PensionLayoutStaticController {
+
+        @RequestMapping("/layoutstatic")
+        public String getLayoutStatic()
+        {
+                return "layoutStatic";
+        }
+}

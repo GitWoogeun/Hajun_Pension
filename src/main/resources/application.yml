@@ -1,0 +1,43 @@
+
+# 포트 설정
+server:
+     port: 8082
+     servlet:
+       context-path: /
+       encoding:
+         charset: UTF-8
+         enabled: true
+         force: true
+
+# Spring 설정
+spring:
+    mvc:
+      view:
+        prefix: /WEB-INF/views/
+        suffix: .jsp
+
+    # DB(Oracle) 접속 정보 Oracle에서 사용할 DB와 user_name 및 pw 설정
+    datasource:
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      url: jdbc:oracle:thin:@localhost:1521:xe?serverTimezone=Asia/Seoul
+      username: DEVELOPER_T
+      password: xkrdnrms
+
+    # JPA 설정
+    jpa:
+      open-in-view: true
+      hibernate:
+        ddl-auto: create
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        use-new-id-generator-mappings: false
+      show-sql: true
+      properties:
+        hibernate.format_sql: true
+
+      jackson:
+        serialization:
+          fail-on-empty-beans: false
+
+
+
