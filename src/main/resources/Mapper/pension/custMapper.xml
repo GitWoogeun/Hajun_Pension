@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hajun.pension.mapper.PensionCustMapper">
+    <insert id="saveCust" parameterType="custDto">
+        INSERT INTO PENSION_CUST
+        (
+            CUST_NO,
+            CUST_ID,
+            CUST_PASSWORD,
+            CUST_NAME,
+            CUST_ADDRESS,
+            CUST_PHON_NUMBER,
+            SOCIAL_ID_YN,
+            REG_DATE
+        )
+        VALUES
+        (
+            #{CUST_NO},
+            #{CUST_ID},
+            #{CUST_PASSWORD},
+            #{CUST_NAME},
+            #{CUST_ADDRESS},
+            #{CUST_PHON_NUMBER},
+            #{SOCIAL_ID_YN},
+            #{REG_DATE}
+        )
+    </insert>
+</mapper>

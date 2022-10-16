@@ -39,5 +39,13 @@ spring:
         serialization:
           fail-on-empty-beans: false
 
+# mybatis 설정
+mybatis:
+  type-aliases-package: com.otrodevym.spring
+  mapper-locations: mybatis/mapper/**/*.xml
+
+
+
+
 
 

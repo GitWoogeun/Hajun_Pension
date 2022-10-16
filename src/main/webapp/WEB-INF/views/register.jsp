@@ -22,41 +22,51 @@
                         <div class="card shadow-lg border-0 rounded-lg mt-5">
                             <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
                             <div class="card-body">
-                                <form>
+                                <form method="post" action="/joinRegister">
                                     <div class="row mb-3">
                                         <div class="col-md-6">
                                             <div class="form-floating mb-3 mb-md-0">
-                                                <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" />
-                                                <label for="inputFirstName">First name</label>
+                                                <input class="form-control" id="inputId" type="text" placeholder="아이디를 입력해주세요." />
+                                                <label for="inputId">아이디</label>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3 mb-md-0">
+                                                <input class="form-control" id="inputPassword" type="password" placeholder="비밀번호를 입력해주세요." />
+                                                <label for="inputPassword">비밀번호</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
                                         <div class="col-md-6">
                                             <div class="form-floating">
-                                                <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
-                                                <label for="inputLastName">Last name</label>
+                                                <input class="form-control" id="inputCustName" type="text" placeholder="이름을 입력해주세요."/>
+                                                <label for="inputCustName">고객명</label>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                                        <label for="inputEmail">Email address</label>
                                     </div>
                                     <div class="row mb-3">
                                         <div class="col-md-6">
-                                            <div class="form-floating mb-3 mb-md-0">
-                                                <input class="form-control" id="inputPassword" type="password" placeholder="Create a password" />
-                                                <label for="inputPassword">Password</label>
+                                            <div class="form-floating">
+                                                <input class="form-control" id="inputAddress" type="text" placeholder="주소를 입력해주세요."/>
+                                                <label for="inputAddress">고객주소</label>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="row mb-3">
                                         <div class="col-md-6">
-                                            <div class="form-floating mb-3 mb-md-0">
-                                                <input class="form-control" id="inputPasswordConfirm" type="password" placeholder="Confirm password" />
-                                                <label for="inputPasswordConfirm">Confirm Password</label>
+                                            <div class="form-floating">
+                                                <input class="form-control" id="inputPhonNumber" type="text" placeholder="휴대전화번호를 입력해주세요."/>
+                                                <label for="inputPhonNumber">휴대전화번호</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mt-4 mb-0">
-                                        <div class="d-grid"><a class="btn btn-primary btn-block" href="login.html">Create Account</a></div>
+                                        <div class="d-grid">
+                                            <input type="submit" class="btn btn-primary btn-block" value="가입하기">
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -76,7 +86,6 @@
                     <div class="text-muted">Copyright &copy; Your Website 2022</div>
                     <div>
                         <a href="#">Privacy Policy</a>
-                        &middot;
                         <a href="#">Terms &amp; Conditions</a>
                     </div>
                 </div>
